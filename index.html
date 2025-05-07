@@ -3,9 +3,43 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Donate Bangladesh</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    
 </head>
 <body>
+    <header class ="flex flex-col items-center gap-18">
+        <!-- nav bar ------------------------ -->
+
+        <nav class="navbar bg-base-100 shadow-sm p-8 gap-2">
+            <div class="navbar-start">
+                <button class="btn btn-success text-xs px-4 py-2 sm:text-lg sm:px-8 sm:py-6 font-bold rounded-lg">Blog</button>
+            </div>
+            <div class="navbar-center">
+                <img src="assets/logo.png" alt="" class="w-8 h-8 sm:w-16 sm:h-16">
+                <a class="btn btn-ghost text-xl md:text-3xl font-bold"> Donate Bangladesh </a>
+            </div>
+            <div class="navbar-end">
+                <img src="assets/coin.png" alt="">
+                <h1 class="font-bold md:text-2xl md:pl-2 pr-2">5000</h1>
+                <h1 class="md:text-2xl font-bold">BDT</h1>
+            </div>
+        </nav>
+
+        <!-- heading-botton-------------------------------- -->
+
+        <div class="flex flex-row gap-10">
+            <button class="btn btn-success text-lg px-8 py-6 font-bold rounded-lg" id="donation">Donation</button>
+            <button class="btn btn-outline btn-success text-lg px-8 py-6 font-bold rounded-lg" id="history">History</button>
+        </div>
+
     
+    </header>
+
+
+
+    <script src="script.js"></script>
 </body>
 </html>
