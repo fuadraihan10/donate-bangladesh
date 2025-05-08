@@ -66,6 +66,21 @@
                     </p>
                     <input id="noakhali-input" type="text" placeholder="Amount" class="input input-success w-auto text-lg px-8 py-6 font-bold rounded-lg" />
                     <button id="noakhali-donate" class="btn btn-success text-lg px-8 py-6 font-bold rounded-lg" >Donate</button>
+                    <!-- modal------------------------------ -->
+                    <dialog id="my_modal_1" class="modal">
+                    <div class="modal-box flex flex-col items-center gap-4">
+                        <h3 class="text-4xl font-bold">Congrates!</h3>
+                        <img src="assets/coin.png" alt="coin">
+                        <p class="py-4">You have donated for Humankind</p>
+                        <h2 class="text-2xl font-semibold">Congrates!</h2>
+                        <div class="modal-action">
+                        <form method="dialog">
+                            <!-- if there is a button in form, it will close the modal -->
+                            <button class="btn">Close conformation</button>
+                        </form>
+                        </div>
+                    </div>
+                    </dialog>
                 </div>
             </div>
 
@@ -119,6 +134,12 @@
                         <button id = "quata-donate" class="btn btn-success text-lg px-8 py-6 font-bold rounded-lg" id="donation">Donate</button>
                     </div>
     
+        </section>
+
+
+        <!-- history---------------------------------- -->
+        <section class="flex flex-col items-center gap-16 m-8 hidden" id="history-section">
+            
         </section>
 
     </main>
