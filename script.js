@@ -35,7 +35,16 @@ function donate(input,button,coin) {
     document.getElementById(coin).innerText =  parseInt(coin_amount) + parseInt(amount);
     my_modal_1.showModal();
 
-    
+    // history management --------------------------
+    var title = `${amount} Taka donated to ${input.replace("-input", "")} , Bangladesh`;
+    var history = document.createElement("div");
+    history.classList.add( "flex", "items-start", "border-2", "border-gray-200", "py-2", "flex-col", "w-4/5", "gap-2","p-5", "rounded-lg");
+    history.innerHTML = `
+    <h1 class="text-3xl font-bold">${title}</h1>
+    <p>Date: ${new Date().toString()}</p>
+
+    `;
+    document.getElementById("history-section").appendChild(history);
 
 });
 }
