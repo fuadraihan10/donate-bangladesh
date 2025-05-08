@@ -54,3 +54,5 @@ donate("noakhali-input","noakhali-donate","noakhali-coin");
 donate("feni-input","feni-donate","feni-coin");
 donate("quata-input","quata-donate","quata-coin");
 
+
+

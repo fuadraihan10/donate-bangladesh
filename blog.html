@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- header---------------------------- -->
+    <header class ="flex flex-col items-center gap-18 sticky top-0 backdrop-blur-md bg-white/30 rounded-xl z-40">
+
+        <!-- nav bar ------------------------ -->
+
+        <nav class="navbar sd:p-8 p-4 gap-5 md:gap-12">
+            <div class="navbar-start">
+                <a href="index.html" class="btn btn-success text-xs px-3 py-0 sm:text-lg sm:px-8 sm:py-6 font-bold rounded-lg">Home</a>
+            </div>
+            <div class="navbar-center">
+                <img src="assets/logo.png" alt="logo" class="w-6 h-6 sm:w-16 sm:h-16">
+                <h1 class="pl-1 md:pl-6 text-base md:text-3xl font-bold pr-1"> Donate Bangladesh </h1>
+            </div>
+            <div class="navbar-end">
+                <img src="assets/coin.png" alt="coin-icon" class="w-4 h-4 sm:w-10 sm:h-10">
+                <h1 id="capital" class="font-bold md:text-2xl md:pl-2 text-xs md:pr-2 pr-1">5000</h1>
+                <h1 class="md:text-2xl font-bold text-xs">BDT</h1>
+            </div>
+        </nav>
+    
+    </header>
+    
+    <!-- heading-botton-------------------------------- -->
+    <section class="flex justify-center m-5">
+        <div id="toggleDiv1"
+             class="w-11/12 bg-white p-6 rounded-xl border border-gray-200 cursor-pointer text-left"
+             onclick="toggleText('hiddenPara1')">
+          <h2 class="text-2xl font-semibold mb-4">What is DOM?</h2>
+          <p id="hiddenPara1" class="hidden text-gray-700 text-base">
+            The DOM (Document Object Model) is a programming interface for web documents.
+            It represents the structure of an HTML or XML page as a tree of objects.
+            Each element (like a paragraph, div, or button) becomes a node in this tree.
+            JavaScript can use the DOM to read, modify, add, or remove elements on the page.
+            For example, clicking a button can change text using DOM methods.
+            In simple terms, the DOM lets you interact with and control web pages dynamically.
+          </p>
+        </div>
+      </section>
+    
+      <section class="flex justify-center m-5">
+        <div id="toggleDiv2"
+             class="w-11/12 bg-white p-6 rounded-xl border border-gray-200 cursor-pointer text-left"
+             onclick="toggleText('hiddenPara2')">
+          <h2 class="text-2xl font-semibold mb-4">How do you select an element from DOM?</h2>
+          <p id="hiddenPara2" class="hidden text-gray-700 text-base">
+            To select an element from the DOM, you can use JavaScript methods like:<br>
+            1. <strong>getElementById()</strong>: Selects an element by its unique ID. <br> Example: document.getElementById("myButton")<br>
+            2. <strong>getElementsByClassName()</strong>: Selects elements by class name. <br> Example: document.getElementsByClassName("myClass")<br>
+            3. <strong>querySelector()</strong>: Selects the first matching element using CSS selectors. <br> Example: document.querySelector(".myClass")<br>
+            4. <strong>querySelectorAll()</strong>: Selects all matching elements. <br> Example: document.querySelectorAll(".myClass")<br>
+            These methods allow you to easily interact with elements in the DOM!
+
+
+          </p>
+        </div>
+      </section>
+    
+      <section class="flex justify-center m-5">
+        <div id="toggleDiv3"
+             class="w-11/12 bg-white p-6 rounded-xl border border-gray-200 cursor-pointer text-left"
+             onclick="toggleText('hiddenPara3')">
+          <h2 class="text-2xl font-semibold mb-4">What is event delegation in the context of the DOM? and why it is a fault?</h2>
+          <p id="hiddenPara3" class="hidden text-gray-700 text-base">
+            Event delegation in the DOM means assigning a single event listener to a parent element instead of individual child elements.
+            The parent element listens for events that bubble up from child elements. 
+            This makes it more efficient because you don’t need multiple listeners for each child. 
+            It is especially useful for handling dynamically added elements. 
+            However, it can be faulty if event propagation is not handled properly. 
+            Event bubbling can sometimes cause confusion in determining which element triggered the event.
+
+          </p>
+        </div>
+      </section>
+    
+      <section class="flex justify-center m-5">
+        <div id="toggleDiv4"
+             class="w-11/12 bg-white p-6 rounded-xl border border-gray-200 cursor-pointer text-left"
+             onclick="toggleText('hiddenPara4')">
+          <h2 class="text-2xl font-semibold mb-4">How do you manupulate  an elements attreabutes and styles using the DOM?</h2>
+          <p id="hiddenPara4" class="hidden text-gray-700 text-base">
+            To manipulate an element's attributes, you can use methods like <br>
+            1. <strong>getAttribute()</strong> to get an attribute's value. <br> Example: element.getAttribute("src"); <br>
+            2. <strong>setAttribute()</strong> to set a new attribute value. <br> Example: element.setAttribute("src", "newImage.jpg"); <br>
+            3. <strong>removeAttribute()</strong> to remove an attribute. <br> Example: element.removeAttribute("src"); <br>
+            To manipulate styles, use the <strong>style</strong> property for inline styles and <strong>classList</strong> for CSS classes.
+
+          </p>
+        </div>
+      </section>
+
+    <script src="blog.js"></script>
+</body>
+</html>
